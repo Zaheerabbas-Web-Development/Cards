@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+
+  <style>
+    /* Card Section */
+.services .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services .boxes .box{
+  margin: 50px 0;
+  width: calc(100% / 3 - 30px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 150px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover{
+  background: #4070f4;
+  color: #fff;
+}
+.services .boxes .box .icon{
+  height: 100px;
+  width: 100px;
+  background: #4070f4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 10px;
+  font-size: 18px;
+  color: #fff;
+  margin: -130px auto 100px auto;
+  transition: all 0.4s ease;
+}
+.boxes .box:hover .icon{
+  background-color: #fff;
+  color: #4070f4;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #fff;
+}
+
+.topic, span, p{
+    margin: -70px auto 100px auto; ;
+}
+
+.topic, span{
+    font-size: 30px;
+}
+
+.box {
+  position: relative;
+}
+
+.card-image {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vh;
+  object-fit: cover;
+
+}
+
+.icon, h4 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+h4 {
+  margin: 0;
+}
+  
+  </style>
+</head>
+<body>
+    <!-- Card Section Start -->
+ <section class="services" id="services">
+   <div class="content">
+     <div class="boxes">
+       <div class="box">
+         <div class="icon">
+            <h4>Toyota</h4>
+           <img src="corolla2.png" alt="" class="card-image">
+       </div>
+       <div class="topic"><span>From 350 SAR</span></div>
+       <p>9 Persons 9 Bags</p>
+     </div>
+       <div class="box">
+         <div class="icon">
+            <h4>H.Civic</h4>
+           <img src="civic2.webp" alt="" class="card-image">
+       </div>
+       <div class="topic"><span>From 400 SAR</span></div>
+       <p>7 Persons 7 Bags</p>
+     </div>
+       <div class="box">
+         <div class="icon">
+            <h4>Hiace</h4>
+           <img src="car.png" alt="" class="card-image">
+       </div>
+       <div class="topic"><span>From 150 SAR</span></div>
+       <p>4 Persons 4 Bags</p>
+     </div>
+   </div>
+ </section>
+</body>
+</html>
